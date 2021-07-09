@@ -1,5 +1,5 @@
-- 👋 Hi, I’m Manish Chandra@monees007 (pronounced as /monees/)
+- 👋 Hi, I’m Manish Chandra (pronounced as /monees/)
 - 👀 I’m interested in Genomics, Data Science and Android Development (Both app and source)
 - 🌱 I’m currently learning 'Computer Programming and Data Science' form IIT Madras and B.Sc. Hon's in Zoology.
 - ✔  I'm not kinda sprint racer, I prefer marathon. 
-- 📫 How to reach me: [mail me](mailto://monees007@outlook.com). [ I reply more quickly here than on whatsapp :cheers: ]
+- 📫 How to reach me: [mail me](mailto://monees007@outlook.com). [ I reply more quickly here than on whatsapp :grin: ]
