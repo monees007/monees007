@@ -46,7 +46,7 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Bind different APIs with python"),
     emoji(
       "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
     )
@@ -66,7 +66,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "flutter",
-      fontAwesomeClassname: "fab fa-chevrons-left"
+      fontAwesomeClassname: "fab fa-angle-left"
     },
 
     {
