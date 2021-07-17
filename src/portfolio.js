@@ -1,138 +1,116 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
-
-// Summary And Greeting Section
-
 import emoji from "react-easy-emoji";
 
 const illustration = {
-  animated: true // set to false to use static SVG
+  animated: true
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Monees 007",
+  title: "Hi all, I'm Monees Chandra",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Android app Developer 📲 having experience with Java, Kotlin, and Flutter.\n Now-a-days I'm playing with Python"
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing",
+        "https://docs.google.com/document/d/e/2PACX-1vRK5xSWiITQGOeRrDwzsET1mP8tjRqrxzQyX_SMeSuYQguPJ8zaAbsq-OmbmeJEPYNaF0bpQAEobmwt/pub",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram and Twitter are also supported in the links!
-  display: true // Set true to display this section, defaults to false
+    github: "https://github.com/monees007",
+    linkedin: "https://www.linkedin.com/in/monees007/",
+    gmail: "monees007@outlook.com",
+    instagram: "https://instagram.com/most_suitable_boy",
+    twitter: "https://twitter.com/monees007",
+  display: true
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
-  ],
+   title: "What I do",
+    subTitle: "I USE TO ENJOY ANDROID DEVELOPMENT APART FROM MY COLLEGE SYLLABUS",
+    skills: [
+      emoji(
+        "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      ),
+      emoji("⚡ Bind different APIs with python"),
+      emoji(
+        "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      )
+    ],
+
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+        {
+          skillName: "java",
+          fontAwesomeClassname: "fab fa-java"
+        },
+        {
+          skillName: "kotlin",
+          fontAwesomeClassname: "fab fa-korvue"
+        },
+        {
+          skillName: "flutter",
+          fontAwesomeClassname: "fab fa-angle-left"
+        },
+
+        {
+          skillName: "ubuntu",
+          fontAwesomeClassname: "fab fa-ubuntu"
+        },
+        {
+          skillName: "android-studio",
+          fontAwesomeClassname: "fab fa-android"
+        },
+        {
+          skillName: "firebase",
+          fontAwesomeClassname: "fas fa-fire"
+        },
+        {
+          skillName: "sql-database",
+          fontAwesomeClassname: "fas fa-database"
+        },
+        {
+          skillName: "aws",
+          fontAwesomeClassname: "fab fa-aws"
+        },
+        //    {
+        //      skillName: "anaconda",
+        //      fontAwesomeClassname: "fab fa-snake"
+        //    },
+        {
+          skillName: "python",
+          fontAwesomeClassname: "fab fa-python"
+        }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      schoolName: "Banaras Hindu University, Varanasi",
+      logo: require("./assets/images/bhu.jpeg"),
+      subHeader: "Bachelor of Science, Hon's in Life Sciences",
+      duration: "August 2019 - April 2022",
+      desc: "Currently studying bio-chemistry, Genetics, Cell Biology, and Physiological Functions, etc."
+      //       descBullets: []
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      schoolName: "Indian Institute of Technology, Madras",
+      logo: require("./assets/images/iitm.png"),
+      subHeader: "B.Sc. in Computer Programming and Data Science",
+      duration: "September 2020 - April 2024",
+      desc: "Learning Programming, Algorithms, Operating Systems, Data Structures, Data Analytics, etc."
+      //       descBullets: []
     }
   ]
 };
@@ -144,15 +122,15 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "85%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "30%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "81%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -161,7 +139,7 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: false, //Set it to true to show workExperiences Section
   experience: [
     {
       role: "Software Engineer",
@@ -196,40 +174,40 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false,
 };
 
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Intresting Projects",
+  //subtitle: "",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/notebook.jpg"),
+      projectName: "Notebook",
+      projectDesc: "Academic Notes provided under Creative Commons License",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://monees007.github.io/Notebook/"
         }
-        //  you can add extra buttons here.
+        //  add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/dextrose.jpeg"),
+      projectName: "September",
+      projectDesc: "Integrated bots running cross-platform; a backend to enhance user-interactions and accessibility.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Go to Repository",
+          url: "https://github.com/users/monees007/projects/1"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Achievement Section
@@ -287,7 +265,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false,
 };
 
 // Blogs Section
@@ -311,7 +289,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -330,7 +308,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -343,21 +321,21 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me 🤙🏼️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3243454077",
-  email_address: "saadpasta70@gmail.com"
+  number: "+91-7897914523",
+  email_address: "monees007@outlook.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "monees0007", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
