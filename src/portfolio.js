@@ -70,7 +70,7 @@ https://fontawesome.com/icons?d=gallery */
         {
             skillName: "intelliJ"
             fontAwesomeClassname: "fab fa-brain"
-        }
+        },
         {
           skillName: "firebase",
           fontAwesomeClassname: "fas fa-fire"
@@ -143,32 +143,15 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: false, //Set it to true to show workExperiences Section
+  display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Developer",
+      company: "Variance Pvt. Ltd.",
+      companylogo: require("./assets/images/variance.png"),
+      date: "June 2020 – Present",
+      desc: "Working as Windows App Developer, front-end and backend programmer.",
+
     }
   ]
 };
@@ -178,7 +161,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false,
+  display: true,
 };
 
 // Some big projects you have worked on
@@ -187,6 +170,17 @@ const bigProjects = {
   title: "Intresting Projects",
   //subtitle: "",
   projects: [
+//    {
+//          image: require("./assets/images/dextrose.jpeg"),
+//          projectName: "September",
+//          projectDesc: "Integrated bots running cross-platform; a backend to enhance user-interactions and accessibility.",
+//          footerLink: [
+//            {
+//              name: "Go to Repository",
+//              url: "https://github.com/users/monees007/projects/1"
+//            }
+//          ]
+//        }
     {
       image: require("./assets/images/notebook.jpg"),
       projectName: "Notebook",
