@@ -98,7 +98,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Banaras Hindu University, Varanasi",
-      logo: require("./assets/images/bhu.jpeg"),
+      logo: require("./assets/images/bhu.png"),
       subHeader: "Bachelor of Science, Hon's in Life Sciences",
       duration: "August 2019 - April 2022",
       desc: "Currently studying bio-chemistry, Genetics, Cell Biology, and Physiological Functions, etc."
