@@ -197,6 +197,24 @@ const bigProjects = {
       ]
     },
     {
+          image: require("./assets/images/ceez.png"),
+          projectName: "Ceez",
+          projectDesc: "Binance - Tanding View Bot",
+          footerLink: [
+            {
+              name: "Screenshots",
+              url: "https://monees007.github.io/Notebook/"
+            },
+          descBullets: [
+              "Take web-hook signals from trading view." ,
+              " Place orders on broker API." ,
+              " Beautiful Graphical Interface" ," Custom Settings Page" ,
+              " Hosted on Heroku"
+
+            //  add extra buttons here.
+          ]
+        },
+    {
       image: require("./assets/images/dextrose.jpeg"),
       projectName: "September",
       projectDesc: "Integrated bots running cross-platform; a backend to enhance user-interactions and accessibility.",
