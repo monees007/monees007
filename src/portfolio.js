@@ -70,7 +70,7 @@ https://fontawesome.com/icons?d=gallery */
         {
             skillName: "intelliJ"
             fontAwesomeClassname: "fab fa-brain"
-        }
+        },
         {
           skillName: "firebase",
           fontAwesomeClassname: "fas fa-fire"
