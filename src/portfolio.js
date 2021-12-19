@@ -204,7 +204,8 @@ const bigProjects = {
             {
               name: "Screenshots",
               url: "https://monees007.github.io/Notebook/"
-            },
+            }],
+
           descBullets: [
               "Take web-hook signals from trading view." ,
               " Place orders on broker API." ,
