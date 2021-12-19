@@ -67,10 +67,7 @@ https://fontawesome.com/icons?d=gallery */
           skillName: "android-studio",
           fontAwesomeClassname: "fab fa-android"
         },
-        {
-            skillName: "intelliJ"
-            fontAwesomeClassname: "fab fa-brain"
-        },
+
         {
           skillName: "firebase",
           fontAwesomeClassname: "fas fa-fire"
