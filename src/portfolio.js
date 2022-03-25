@@ -6,7 +6,7 @@ const illustration = {
 
 const greeting = {
   username: "Monees 007",
-  title: "Hi all, I'm Monees Chandra",
+  title: "Hi all, I'm Manish Chandra",
   subTitle: emoji(
     "A passionate Android app Developer 📲 having experience with Java, Kotlin, and Flutter.\n Now-a-days I'm playing with Python"
   ),
