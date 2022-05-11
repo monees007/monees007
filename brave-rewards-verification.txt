@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: monees007.me
+Token: 5b180e6781ed1828c8008737263220d01c2de707dc6d63b402a1b0536968390f
