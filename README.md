@@ -11,28 +11,5 @@
 ✔  ```I'm not kinda sprint racer, I prefer marathon. ``` <br>
 📫 `How to reach me:`[✉️](mailto://monees007@outlook.com)`[ I reply more quickly here than on whatsapp:grin:😅`]` <br>
 
-<div style='visibility:true'> >
 
 
-### PROJECT: FOLIOFILE
-
-<details>
-<summary>Change Logs:</summary>
-<p>
-
-   - Dark Theme turned on.
-   - Switch Style updated.
-   
-</p>
-</details>
-  
-<details>
-  <summary>Known Issues: </summary>
-  
-  - Signature font not loading
-  - flutter icon not provided by current icon provider
-  - `Bye` background not loading in android.
-  
-  </details>
-  
-  </div>
