@@ -111,7 +111,6 @@ const StyledHighlight = styled.div`
   transform: translateY(calc(${({ activeTabId }) => activeTabId} * var(--tab-height)));
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition-delay: 0.1s;
-  will-change: transform;
 
   @media (max-width: 600px) {
     top: auto;
@@ -166,22 +165,21 @@ const StyledTabPanel = styled.div`
   }
 `;
 
-const Jobs = () => {
+const Education = () => {
   const data = useStaticQuery(graphql`
     query {
-      jobs: allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/content/jobs/" } }
+      education: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/education/" } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
           node {
             frontmatter {
               title
-              company
+              institution
               location
               range
               url
-              pi
             }
             html
           }
@@ -190,7 +188,7 @@ const Jobs = () => {
     }
   `);
 
-  const jobsData = data.jobs.edges;
+  const educationData = data.education.edges;
 
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
@@ -211,20 +209,16 @@ const Jobs = () => {
       tabs.current[tabFocus].focus();
       return;
     }
-    // If we're at the end, go to the start
     if (tabFocus >= tabs.current.length) {
       setTabFocus(0);
     }
-    // If we're at the start, move to the end
     if (tabFocus < 0) {
       setTabFocus(tabs.current.length - 1);
     }
   };
 
-  // Only re-run the effect if tabFocus changes
   useEffect(() => focusTab(), [tabFocus]);
 
-  // Focus on tabs when using up & down arrow keys
   const onKeyDown = e => {
     switch (e.key) {
       case KEY_CODES.ARROW_UP: {
@@ -246,26 +240,26 @@ const Jobs = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs" ref={revealContainer}>
-      <h2 className="numbered-heading">Research Experience</h2>
+    <StyledJobsSection id="jobs2" ref={revealContainer}>
+      <h2 className="numbered-heading">Education</h2>
 
       <div className="inner">
-        <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyDown(e)}>
-          {jobsData &&
-            jobsData.map(({ node }, i) => {
-              const { company } = node.frontmatter;
+        <StyledTabList role="tablist" aria-label="Education tabs" onKeyDown={e => onKeyDown(e)}>
+          {educationData &&
+            educationData.map(({ node }, i) => {
+              const { institution } = node.frontmatter;
               return (
                 <StyledTabButton
                   key={i}
                   isActive={activeTabId === i}
                   onClick={() => setActiveTabId(i)}
                   ref={el => (tabs.current[i] = el)}
-                  id={`tab-${i}`}
+                  id={`tab-edu-${i}`}
                   role="tab"
                   tabIndex={activeTabId === i ? '0' : '-1'}
                   aria-selected={activeTabId === i ? true : false}
-                  aria-controls={`panel-${i}`}>
-                  <span>{company}</span>
+                  aria-controls={`panel-edu-${i}`}>
+                  <span>{institution}</span>
                 </StyledTabButton>
               );
             })}
@@ -273,31 +267,28 @@ const Jobs = () => {
         </StyledTabList>
 
         <StyledTabPanels>
-          {jobsData &&
-            jobsData.map(({ node }, i) => {
+          {educationData &&
+            educationData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, pi, url, company, range } = frontmatter;
+              const { title, url, institution, range } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
                   <StyledTabPanel
-                    id={`panel-${i}`}
+                    id={`panel-edu-${i}`}
                     role="tabpanel"
                     tabIndex={activeTabId === i ? '0' : '-1'}
-                    aria-labelledby={`tab-${i}`}
+                    aria-labelledby={`tab-edu-${i}`}
                     aria-hidden={activeTabId !== i}
                     hidden={activeTabId !== i}>
                     <h3>
                       <span>{title}</span>
-                      <br></br>
-
                       <span className="company">
+                        &nbsp;@&nbsp;
                         <a href={url} className="inline-link">
-                          {pi}
+                          {institution}
                         </a>
                       </span>
-                      <br></br>
-                      <span>{company}</span>
                     </h3>
 
                     <p className="range">{range}</p>
@@ -313,4 +304,4 @@ const Jobs = () => {
   );
 };
 
-export default Jobs;
+export default Education;

@@ -125,7 +125,24 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'DFT',
+    'QM/MM',
+    'Quantum Espresso',
+    'TD-DFT',
+    'CP2K',
+
+    'Python',
+    'Java',
+    'Kotlin',
+    'JavaScript',
+    'Dart',
+    'Linux',
+    'Git',
+    'Bash',
+    'HPC',
+    'MPI',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,33 +152,28 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! I'm Manish Chandra, a chemistry researcher passionate about computational
+              materials science and molecular dynamics. I specialize in theoretical and
+              computational chemistry, leveraging advanced computational tools to understand and
+              predict the behavior of complex molecular systems.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              My research focuses on material characterization through both experimental and
+              computational methods. I've worked extensively with density functional theory (DFT),
+              quantum mechanics/molecular mechanics (QM/MM) simulations, and high-performance
+              computing environments. Currently, I'm exploring the fascinating world of
+              metal-organic frameworks and their applications in materials science.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Beyond research, I'm also interested in developing software solutions that bridge
+              chemistry and technology. I combine my strong computational chemistry background with
+              programming expertise to create innovative tools for scientific research and
+              discovery.
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies I've been working with recently:</p>
           </div>
 
           <ul className="skills-list">
